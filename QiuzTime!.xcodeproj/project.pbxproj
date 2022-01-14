@@ -13,6 +13,7 @@
 		F0B7DDE827918877006E6C3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B7DDE627918877006E6C3E /* Main.storyboard */; };
 		F0B7DDEA2791887A006E6C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B7DDE92791887A006E6C3E /* Assets.xcassets */; };
 		F0B7DDED2791887A006E6C3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B7DDEB2791887A006E6C3E /* LaunchScreen.storyboard */; };
+		F0B7DDF627919300006E6C3E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7DDF527919300006E6C3E /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F0B7DDE92791887A006E6C3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0B7DDEC2791887A006E6C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0B7DDEE2791887A006E6C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B7DDF527919300006E6C3E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,21 @@
 				F0B7DDE027918877006E6C3E /* AppDelegate.swift */,
 				F0B7DDE227918877006E6C3E /* SceneDelegate.swift */,
 				F0B7DDE427918877006E6C3E /* ViewController.swift */,
+				F0B7DDF4279192EB006E6C3E /* Model */,
 				F0B7DDE627918877006E6C3E /* Main.storyboard */,
 				F0B7DDE92791887A006E6C3E /* Assets.xcassets */,
 				F0B7DDEB2791887A006E6C3E /* LaunchScreen.storyboard */,
 				F0B7DDEE2791887A006E6C3E /* Info.plist */,
 			);
 			path = "QiuzTime!";
+			sourceTree = "<group>";
+		};
+		F0B7DDF4279192EB006E6C3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0B7DDF527919300006E6C3E /* Question.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0B7DDE527918877006E6C3E /* ViewController.swift in Sources */,
+				F0B7DDF627919300006E6C3E /* Question.swift in Sources */,
 				F0B7DDE127918877006E6C3E /* AppDelegate.swift in Sources */,
 				F0B7DDE327918877006E6C3E /* SceneDelegate.swift in Sources */,
 			);
