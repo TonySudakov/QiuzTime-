@@ -28,25 +28,36 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYc-k7-bEB">
-                                <rect key="frame" x="57" y="762" width="300" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldj-jf-90B" userLabel="firstAnswerButton">
+                                <rect key="frame" x="57" y="602" width="300" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="eSs-e0-OKe"/>
-                                    <constraint firstAttribute="width" constant="300" id="nd8-yB-JJR"/>
+                                    <constraint firstAttribute="height" constant="50" id="iGW-E8-o1z"/>
+                                    <constraint firstAttribute="width" constant="300" id="jEo-9v-NX1"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Wrong!" cornerStyle="large">
+                                <buttonConfiguration key="configuration" style="tinted" title="Answer 1" cornerStyle="large">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-VC-bb9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-VC-bb9" userLabel="secondAnswerButton">
                                 <rect key="frame" x="57" y="682" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="7ew-QG-Tje"/>
                                     <constraint firstAttribute="height" constant="50" id="d8m-ap-GoW"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Right!" cornerStyle="large">
+                                <buttonConfiguration key="configuration" style="tinted" title="Answer 2" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYc-k7-bEB" userLabel="thirdAnswerButton">
+                                <rect key="frame" x="57" y="762" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eSs-e0-OKe"/>
+                                    <constraint firstAttribute="width" constant="300" id="nd8-yB-JJR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Answer 3" cornerStyle="large">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
@@ -64,9 +75,11 @@
                             <constraint firstItem="wAI-8B-MnX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2xc-jy-VaU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OYc-k7-bEB" secondAttribute="bottom" constant="50" id="Dh3-vD-91f"/>
                             <constraint firstItem="zyG-cV-LEW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iem-xw-wYz"/>
+                            <constraint firstItem="Ldj-jf-90B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MlN-pW-UdK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sz3-qn-e1E" secondAttribute="trailing" id="Mlz-Mr-uRQ"/>
                             <constraint firstItem="OYc-k7-bEB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UhB-7x-dGH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wAI-8B-MnX" secondAttribute="trailing" id="ZPe-V8-3ZA"/>
+                            <constraint firstItem="9Xa-VC-bb9" firstAttribute="top" secondItem="Ldj-jf-90B" secondAttribute="bottom" constant="30" id="bSB-ON-ErI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zyG-cV-LEW" secondAttribute="bottom" constant="10" id="cvI-Ef-2lB"/>
                             <constraint firstItem="wAI-8B-MnX" firstAttribute="top" secondItem="sz3-qn-e1E" secondAttribute="bottom" constant="100" id="dHX-sh-VsR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zyG-cV-LEW" secondAttribute="trailing" constant="50" id="qri-Mv-sWY"/>
