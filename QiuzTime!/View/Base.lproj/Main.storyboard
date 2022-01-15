@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -22,9 +22,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAI-8B-MnX">
-                                <rect key="frame" x="0.0" y="230" width="414" height="252"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAI-8B-MnX">
+                                <rect key="frame" x="20" y="230" width="374" height="252"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra adipiscing at in tellus. Ut diam quam nulla porttitor massa id. Vestibulum sed arcu non odio euismod lacinia at quis. Dolor sit amet consectetur adipiscing. Sollicitudin tempor id eu nisl. Ornare suspendisse sed nisi lacus sed viverra tellus in. Tempus quam pellentesque nec nam. In cursus turpis massa tincidunt dui. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -35,9 +36,12 @@
                                     <constraint firstAttribute="width" constant="300" id="jEo-9v-NX1"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Answer 1" cornerStyle="large">
+                                <buttonConfiguration key="configuration" style="tinted" title="Button 1" cornerStyle="large">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="36L-oa-jhn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-VC-bb9" userLabel="secondAnswerButton">
                                 <rect key="frame" x="57" y="682" width="300" height="50"/>
@@ -46,9 +50,12 @@
                                     <constraint firstAttribute="height" constant="50" id="d8m-ap-GoW"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Answer 2" cornerStyle="large">
+                                <buttonConfiguration key="configuration" style="tinted" title="Button 2" cornerStyle="large">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QzN-la-U9n"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYc-k7-bEB" userLabel="thirdAnswerButton">
                                 <rect key="frame" x="57" y="762" width="300" height="50"/>
@@ -57,9 +64,12 @@
                                     <constraint firstAttribute="width" constant="300" id="nd8-yB-JJR"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Answer 3" cornerStyle="large">
+                                <buttonConfiguration key="configuration" style="tinted" title="Button 3" cornerStyle="large">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXz-3F-O11"/>
+                                </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zyG-cV-LEW">
                                 <rect key="frame" x="50" y="850.5" width="314" height="2.5"/>
@@ -72,13 +82,13 @@
                         <constraints>
                             <constraint firstItem="OYc-k7-bEB" firstAttribute="top" secondItem="9Xa-VC-bb9" secondAttribute="bottom" constant="30" id="2Kx-hQ-9hu"/>
                             <constraint firstItem="sz3-qn-e1E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="2cs-zM-QDt"/>
-                            <constraint firstItem="wAI-8B-MnX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2xc-jy-VaU"/>
+                            <constraint firstItem="wAI-8B-MnX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2xc-jy-VaU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OYc-k7-bEB" secondAttribute="bottom" constant="50" id="Dh3-vD-91f"/>
                             <constraint firstItem="zyG-cV-LEW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iem-xw-wYz"/>
                             <constraint firstItem="Ldj-jf-90B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MlN-pW-UdK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sz3-qn-e1E" secondAttribute="trailing" id="Mlz-Mr-uRQ"/>
                             <constraint firstItem="OYc-k7-bEB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UhB-7x-dGH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wAI-8B-MnX" secondAttribute="trailing" id="ZPe-V8-3ZA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wAI-8B-MnX" secondAttribute="trailing" constant="20" id="ZPe-V8-3ZA"/>
                             <constraint firstItem="9Xa-VC-bb9" firstAttribute="top" secondItem="Ldj-jf-90B" secondAttribute="bottom" constant="30" id="bSB-ON-ErI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zyG-cV-LEW" secondAttribute="bottom" constant="10" id="cvI-Ef-2lB"/>
                             <constraint firstItem="wAI-8B-MnX" firstAttribute="top" secondItem="sz3-qn-e1E" secondAttribute="bottom" constant="100" id="dHX-sh-VsR"/>
@@ -89,6 +99,14 @@
                             <constraint firstItem="zyG-cV-LEW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="xVK-cz-Rq5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstAnswerButton" destination="Ldj-jf-90B" id="EDX-Xh-DQ7"/>
+                        <outlet property="progressBar" destination="zyG-cV-LEW" id="YOH-E4-oXk"/>
+                        <outlet property="questionLabel" destination="wAI-8B-MnX" id="p46-xS-1G6"/>
+                        <outlet property="scoreLabel" destination="sz3-qn-e1E" id="VzL-Q4-IzU"/>
+                        <outlet property="secondAnswerButton" destination="9Xa-VC-bb9" id="k4y-Fu-rSg"/>
+                        <outlet property="thirdAnswerButton" destination="OYc-k7-bEB" id="MVD-kz-ny3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
